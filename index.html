@@ -1,12 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Workout Log</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+      <h1 style="text-align: center;">Workout Log</h1>
+      <div class="container">
+          <form class="form" action="">
+        <label class="form-label">Insira um item</label>
+        <br />
+        <input
+          type="text"
+          class="form-input"
+          placeholder="Tempo gasto"
+          data-form-input
+        />
+        <select class="form-opt" data-form-opt>
+          <option>Corrida</option>
+          <option>Natação</option>
+          <option>Bicicleta</option>
+        </select>
+        <input type="date" class="form-date" data-form-date />
+        <button class="form-button" data-form-button>Add</button>
+      </form>
+    </div>
+
+    <script src="./index.js" type="module"></script>
+  </body>
 </html>
