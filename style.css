@@ -8,6 +8,10 @@ body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.tittle {
+    text-align: center;
+}
+
 .container {
     display: flex;
     align-items: center;
@@ -27,21 +31,21 @@ body {
     font-size: large;
 }
 
-.form-input {
+#form-time {
     margin-top: 8px;
     height: 20px;
 }
 
-.form-opt {
+#form-activity {
     height: 24px;
 }
 
-.form-date {
+#form-date {
     height: 20px;
     text-align: center;
 }
 
-.form-button {
+#form-button {
     font-weight: bold;
     border: 0px;
     border-radius: 1px;
@@ -52,6 +56,6 @@ body {
     cursor: pointer;
 }
 
-.form-button:hover{
+#form-button:hover{
     background-color: #887be0;
 }

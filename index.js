@@ -1,10 +1,10 @@
-const addButton = document.querySelector("[data-form-button]");
+const addButton = document.querySelector("#form-button");
 
 addButton.addEventListener("click", (event) => {
   event.preventDefault();
-  const timeSpent = document.querySelector("[data-form-input]");
-  const opt = document.querySelector("[data-form-opt]");
-  const date = document.querySelector("[data-form-date]");
+  const timeSpent = document.querySelector("#form-time");
+  const activity = document.querySelector("#form-activity");
+  const date = document.querySelector("#form-date");
 
-  console.log(`${timeSpent.value}, ${opt.value}, ${date.value}`);
+  console.log(`${timeSpent.value}, ${activity.value}, ${date.value}`);
 });
