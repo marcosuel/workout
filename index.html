@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-      <h1 style="text-align: center;">Workout Log</h1>
-      <div class="container">
-          <form class="form" action="">
+    <h1 style="text-align: center">Workout Log</h1>
+    <div class="container">
+      <form class="form" action="">
         <label class="form-label">Insira um item</label>
         <br />
         <input
@@ -27,6 +27,24 @@
         <input type="date" class="form-date" data-form-date />
         <button class="form-button" data-form-button>Add</button>
       </form>
+      <table class="list" data-list>
+        <thead>
+          <tr>
+            <th>Tempo</th>
+            <th>Tipo</th>
+            <th>Data</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2h</td>
+            <td>Corrida</td>
+            <td>15/05/2021</td>
+            <td><img src="./img/delete.png" class="delete-button"></td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
     <script src="./index.js" type="module"></script>
