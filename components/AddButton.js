@@ -2,7 +2,7 @@ import DeleteButton from "./DeleteButton.js";
 import DataManager from "../util/DataManager.js";
 
 const InsertRow = (activityId, tempo, tipo, data) => {
-  const tableBody = document.querySelector("[data-list] tbody");
+  const tableBody = document.querySelector("#activity-list tbody");
   const newRow = document.createElement("tr");
   newRow.innerHTML = `
     <input type="hidden" id="activityId" value=${activityId}>
