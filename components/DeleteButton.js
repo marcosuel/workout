@@ -7,7 +7,7 @@ const deleteItem = (event) => {
 
   let activities = DataManager.getActivityList();
   activities = activities.filter((element) => element.id != activityId);
-  DataManager.UpdateActivityList(activities);
+  DataManager.updateActivityList(activities);
 };
 
 const DeleteButton = () => {

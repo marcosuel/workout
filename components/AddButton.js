@@ -32,8 +32,8 @@ const addItem = (event) => {
   const data = date.value;
 
   activities.push({ id, tempo, tipo, data });
-  DataManager.UpdateActivityList(activities);
-  
+  DataManager.updateActivityList(activities);
+
   InsertRow(id, tempo, tipo, data);
   id++;
 };
