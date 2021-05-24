@@ -23,12 +23,12 @@ const addItem = (event) => {
   let id = 0;
   if (activities.length) id = activities[activities.length - 1].id + 1;
 
-  const timeSpent = document.querySelector("[data-form-input]");
-  const opt = document.querySelector("[data-form-opt]");
-  const date = document.querySelector("[data-form-date]");
+  const timeSpent = document.querySelector("#form-time");
+  const activity = document.querySelector("#form-activity");
+  const date = document.querySelector("#form-date");
 
   const tempo = timeSpent.value;
-  const tipo = opt.value;
+  const tipo = activity.value;
   const data = date.value;
 
   activities.push({ id, tempo, tipo, data });
@@ -39,7 +39,7 @@ const addItem = (event) => {
 };
 
 const AddButton = () => {
-  const addButton = document.querySelector("[data-form-button]");
+  const addButton = document.querySelector("#form-button");
   addButton.addEventListener("click", addItem);
   return addButton;
 };

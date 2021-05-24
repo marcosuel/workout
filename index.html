@@ -8,24 +8,23 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1 style="text-align: center">Workout Log</h1>
+    <h1 class="tittle">Workout Log</h1>
     <div class="container">
       <form class="form" action="">
         <label class="form-label">Insira um item</label>
         <br />
         <input
           type="text"
-          class="form-input"
+          id="form-time"
           placeholder="Tempo gasto"
-          data-form-input
         />
-        <select class="form-opt" data-form-opt>
+        <select id="form-activity">
           <option>Corrida</option>
           <option>Natação</option>
           <option>Bicicleta</option>
         </select>
-        <input type="date" class="form-date" data-form-date />
-        <button class="form-button" data-form-button>Add</button>
+        <input type="date" id="form-date" />
+        <button id="form-button">Add</button>
       </form>
       <table class="list" data-list>
         <thead>
