@@ -1,15 +1,16 @@
 import DeleteButton from "./DeleteButton.js";
 import DataManager from "../util/DataManager.js";
 
-const InsertRow = (activityId, tempo, tipo, data) => {
+const insertRow = (activityId, tempo, tipo, data) => {
   const tableBody = document.querySelector("#activity-list tbody");
   const newRow = document.createElement("tr");
   newRow.innerHTML = `
-    <input type="hidden" id="activityId" value=${activityId}>
     <td>${tempo}h</td>
     <td>${tipo}</td>
     <td>${data}</td>
     `;
+
+  newRow.setAttribute("data-activity-id", activityId);
 
   const td = document.createElement("td");
   td.appendChild(DeleteButton());
@@ -34,14 +35,14 @@ const addItem = (event) => {
   activities.push({ id, tempo, tipo, data });
   DataManager.updateActivityList(activities);
 
-  InsertRow(id, tempo, tipo, data);
+  insertRow(id, tempo, tipo, data);
   id++;
 };
 
-const AddButton = () => {
+const addButtonEventListener = () => {
   const addButton = document.querySelector("#form-button");
   addButton.addEventListener("click", addItem);
   return addButton;
 };
 
-export { AddButton, InsertRow };
+export { addButtonEventListener, insertRow };
