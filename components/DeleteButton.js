@@ -2,7 +2,7 @@ import DataManager from "../util/DataManager.js";
 
 const deleteItem = (event) => {
   let targetRow = event.target.parentElement.parentElement;
-  let activityId = targetRow.children[0].value;
+  let activityId = targetRow.getAttribute("data-activity-id");
   targetRow.remove();
 
   let activities = DataManager.getActivityList();

@@ -5,11 +5,12 @@ const insertRow = (activityId, tempo, tipo, data) => {
   const tableBody = document.querySelector("#activity-list tbody");
   const newRow = document.createElement("tr");
   newRow.innerHTML = `
-    <input type="hidden" id="activityId" value=${activityId}>
     <td>${tempo}h</td>
     <td>${tipo}</td>
     <td>${data}</td>
     `;
+
+  newRow.setAttribute("data-activity-id", activityId);
 
   const td = document.createElement("td");
   td.appendChild(DeleteButton());
