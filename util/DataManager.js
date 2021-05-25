@@ -1,11 +1,12 @@
+const LOCAL_STORAGE_KEY = "activities" ;
+
 export default {
-    UpdateActivityList: (newList) => {
-        localStorage.setItem("activities", JSON.stringify(newList));
+    updateActivityList: (newList) => {
+        localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(newList));
     },
     getActivityList: () => {
-        let localData = localStorage.getItem("activities");
+        let localData = localStorage.getItem(LOCAL_STORAGE_KEY);
         let activities = JSON.parse(localData);
-        if (activities == null) activities = [];
-        return activities;
+        return activities || [];
     }
 }
