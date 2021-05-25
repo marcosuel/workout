@@ -1,10 +1,10 @@
-const addButton = document.querySelector("#form-button");
+import { addButtonEventListener, insertRow } from "./components/AddButton.js";
+import DataManager from "./util/DataManager.js";
 
-addButton.addEventListener("click", (event) => {
-  event.preventDefault();
-  const timeSpent = document.querySelector("#form-time");
-  const activity = document.querySelector("#form-activity");
-  const date = document.querySelector("#form-date");
+let activities = DataManager.getActivityList();
 
-  console.log(`${timeSpent.value}, ${activity.value}, ${date.value}`);
+activities.forEach((item) => {
+  insertRow(item.id, item.tempo, item.tipo, item.data);
 });
+
+addButtonEventListener();
