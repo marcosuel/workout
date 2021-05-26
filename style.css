@@ -1,96 +1,104 @@
 * {
     padding: 0;
     margin: 0;
-}
-
-body {
+  }
+  
+  body {
     padding: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.tittle {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  
+  .tittle {
     text-align: center;
-}
-
-.container {
+  }
+  
+  .container {
     padding: 20px 0;
-}
-
-#activity-list {
+  }
+  
+  #activity-list {
     width: 500px;
     border: 2px solid rgb(114, 114, 114);
     border-collapse: collapse;
     table-layout: fixed;
     margin: 20px auto 0 auto;
-}
-
-#activity-list th,td{
+  }
+  
+  #activity-list th,
+  td {
     text-align: left;
     padding: 10px;
-}
-
-#activity-list th:last-child, td:last-child{
+  }
+  
+  #activity-list th:last-child,
+  td:last-child {
     width: 20px;
     text-align: center;
-}
-
-#activity-list thead{
-    background-color: #C0C2C4;
-}
-
-#activity-list tbody tr:hover{
-    background-color: #CFD2D4;
-}
-
-.delete-button {
+  }
+  
+  #activity-list thead {
+    background-color: #c0c2c4;
+  }
+  
+  #activity-list tbody tr:hover {
+    background-color: #cfd2d4;
+  }
+  
+  .delete-button {
     width: 25px;
     height: 25px;
     cursor: pointer;
     z-index: 999;
-}
-
-.delete-button:hover {
+  }
+  
+  .delete-button:hover {
     filter: contrast(3);
-}
-
-.form {
+  }
+  
+  .form {
     box-sizing: border-box;
     width: 500px;
     border: 2px solid rgb(114, 114, 114);
     margin: 0 auto;
     padding: 10px;
-}
-
-.form-label{
+  }
+  
+  .form-label {
     color: black;
     font-size: large;
-}
-
-#form-time {
+  }
+  
+  #form-time {
     margin-top: 8px;
     height: 20px;
-}
-
-#form-activity {
+  }
+  
+  #form-activity {
     height: 24px;
-}
-
-#form-date {
+  }
+  
+  #form-date {
     height: 20px;
     text-align: center;
-}
-
-#form-button {
+  }
+  
+  #form-button {
     font-weight: bold;
     border: 0px;
     border-radius: 1px;
-    color: #272B29;
-    background-color: #A99BFF;
+    color: #272b29;
+    background-color: #a99bff;
     height: 24px;
     width: 50px;
     cursor: pointer;
-}
-
-#form-button:hover{
+  }
+  
+  #form-button:hover {
     background-color: #887be0;
-}
+  }
+  
+  #counter {
+    text-align: center;
+    margin-top: 20px;
+  }
+  

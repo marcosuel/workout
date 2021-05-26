@@ -34,7 +34,7 @@ const addItem = (event) => {
 
   activities.push({ id, tempo, tipo, data });
   DataManager.updateActivityList(activities);
-  
+
   insertRow(id, tempo, tipo, data);
   id++;
 };
